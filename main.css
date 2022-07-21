@@ -1,0 +1,214 @@
+/* ==UserStyle==
+@name           Limelight Round
+@namespace      limelight,moe
+@version        1.0.0
+@description    Make limeight beautiful!
+@author         Lhc_fl
+==/UserStyle== */
+
+@-moz-document domain("limelight.moe") {
+.btn.btn-default {
+    border-radius: 800px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+/*     border: 1px solid rgb(0 0 0/15%) */
+    
+}
+
+.btn.btn-primary {
+    border-radius: 800px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+/*     border: 1px solid rgb(155 0 0/15%)
+     */
+}
+
+
+/* 最新 热门 类别 wiki */
+.nav-pills>li a.active {
+    border-radius: 800px;
+}
+.nav-pills>li>a {
+    border-radius: 800px;
+}
+
+
+
+
+
+
+
+.modal-inner-container {
+    border-radius: 15px;
+}
+
+
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
+    border-radius: 8px;
+}
+
+.select-kit .select-kit-row.is-selected {
+    border-radius: 8px;
+}
+.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover {
+    border-radius: 8px;
+}
+
+
+
+
+
+/* 回复底下的按钮 */
+nav.post-controls .actions button.d-hover, nav.post-controls .actions button:focus, nav.post-controls .actions button:active {
+    border-radius: 800px;
+}
+nav.post-controls .actions button {
+    border-radius: 800px;
+}
+nav.post-controls .actions .double-button button{
+    border-radius: 800px;
+}
+nav.post-controls .actions .double-button button.button-count.d-hover{
+    background-color: rgb(0 0 0/0%);
+}
+nav.post-controls .actions .double-button button.button-count {
+    background-color: rgb(0 0 0/0%);
+}
+/* nav.post-controls .actions .double-button button.read-indicator{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+nav.post-controls .actions .double-button button.button-count+.toggle-like{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+nav.post-controls .actions .double-button.widget-button.button-flat{
+    border-radius:100px;
+}
+ */
+
+
+
+
+
+.d-header-icons .icon {
+    border-radius: 100px;
+    /* nav icon */
+}
+
+.discourse-no-touch .d-header-icons .icon:hover, .discourse-no-touch .d-header-icons .icon:focus {
+    border-radius: 100px; 
+    /* nav icon */
+}
+
+div.menu-links-header .menu-links-row button.active {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+div.menu-links-header .menu-links-row .glyphs button {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.menu-panel.drop-down {
+    border-radius:15px;
+}
+
+
+.list-controls .combo-box .combo-box-header {
+    border-radius:800px;
+}
+
+.list-controls .nav-pills>li {
+    border-radius:800px;
+}
+.select-kit .select-kit-header {
+    border-radius:800px;
+}
+
+
+.discourse-no-touch .sortable:hover, .discourse-no-touch .sortable:focus {
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+
+
+#topic-entrance {
+    border-radius:15px;
+        
+}
+/* #topic-progress {
+    border-radius:15px;
+} */
+
+
+.popup-menu {
+    border-radius:15px;
+}
+
+.popup-menu .btn {
+    border-radius:15px;
+}
+
+.select-kit.is-expanded .select-kit-body {
+    border-radius:15px;
+}
+
+
+/* #topic-progress .bg {
+    border-radius:15px;
+} */
+
+/* 搜索框 */
+
+.search-menu .search-input {
+    border-radius: 8px;
+}
+.search-menu .search-input input#search-term {
+    border-radius: 8px;
+}
+.search-menu .browser-search-tip .tip-label, .search-menu .search-random-quick-tip .tip-label {
+    border-radius: 8px;
+}
+
+
+
+/* 回复框 */
+.d-editor-textarea-wrapper {
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    border-radius: 8px;
+}
+
+.select-kit.multi-select .multi-select-header {
+    border-radius: 8px;
+}
+
+#reply-control .category-input .category-chooser .select-kit-header {
+    border-radius: 8px;
+}
+
+/* 框 */
+
+/* .topic-list-item {
+    background-color: rgb(0 0 0/10%);
+    border-radius:10px;
+    padding:10px;
+} */
+
+.hamburger-panel .panel-body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width:10px;
+    
+}
+.hamburger-panel .panel-body::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--primary-med-or-secondary-med);
+}
+.hamburger-panel .panel-body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+}
+}
