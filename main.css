@@ -1,24 +1,216 @@
 /* ==UserStyle==
 @name           Limelight Round
 @namespace      limelight,moe
-@version        1.0.0
+@version        1.0.1
 @description    Make limeight beautiful!
 @author         Lhc_fl
 ==/UserStyle== */
 
 @-moz-document domain("limelight.moe") {
+:root{
+    --card-background-color: rgb(255 255 255/90%);
+    --normal-box-shadow-color:rgb(0 0 0 /15%);
+    --active-box-shadow-color:rgb(0 0 0 /25%);
+    
+/*     --secondary: rgb(0 0 0/4%); */
+}
+
+/* 背景 */
+body {
+    background-color:rgb(0 0 0/2%);
+/*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F8f90a8cbe8a8beda8517608e34f3c21d8288c893.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661058986&t=c1846acc137315ecc0bd60a3f92d175f); */
+    
+}
+
+
+.topic-list-item {
+    box-shadow: 0 0px 4px var(--normal-box-shadow-color);
+/*     border:1px solid var(--primary-low); */
+/*     border-radius: 15px; */
+    background-color: var(--card-background-color);
+    transition: box-shadow 0.15s;
+    margin-top:10px;
+}
+.topic-list-item:hover {
+    box-shadow: 0 0px 8px var(--normal-box-shadow-color);}
+
+@keyframes background-fade-highlight {
+  0% {
+    background-color: var(--tertiary-low);
+  }
+  100% {
+    background-color: var(--card-background-color);
+  }
+}
+
+
+
+.topic-list {
+    border-collapse: separate;
+}
+.topic-list-body {
+    border-collapse: separate;
+}
+
+
+.alert.alert-info {
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+/*     border:1px solid var(--primary-low); */
+    border-radius: 15px;
+    transition: all 0.15s;
+    margin-bottom: 45px;
+    margin-top: -30px;
+}
+.alert.alert-info.clickable{
+    margin-top:0;
+    margin-bottom:10px; 
+}
+
+.show-more.has-topics {
+    position: relative;
+    margin-bottom:10px;
+}
+
+
+
+
+/* 楼层 */
+/* .boxed  {
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+    margin-bottom: 15px;
+} */
+.topic-body {
+    padding-right:10px;
+    padding-left:10px;
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+    margin: 15px;
+    transition: box-shadow 0.15s;
+}
+.topic-body:hover {
+    box-shadow: 0 2px 8px var(--active-box-shadow-color);
+}
+
+@media (min-width: 1010px){
+    .topic-body {
+        width:calc(100%-300px);
+    }
+}
+@media (max-width: 1010px){
+.topic-body {
+    width: calc(100% - 100px);
+}
+}
+@media (max-width: 790px){
+.topic-body {
+    width: calc(100% - 77px);
+}
+}
+.topic-avatar {
+    border:none;
+    width:35px;
+}
+.topic-body .topic-meta-data {
+/*     border:1px solid; */
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:5px;
+    
+    border-bottom:1px solid var(--primary-low);
+    
+    margin-top:-12px;
+    margin-left:-11px;
+    margin-right:-11px;
+    
+    
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    background-color:rgb(0 0 0/4%);
+}
+
+
+
+/* footer */
+.presence-users {
+    background-color:transparent;
+}
+
+/* 右边栏 */
+.timeline-container {
+    padding:10px;
+    box-shadow: 0 2px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+    transition: box-shadow 0.15s;
+    width:150px;
+}
+.timeline-container:hover {
+    box-shadow: 0 2px 8px var(--active-box-shadow-color);
+}
+
+@media screen and (prefers-reduced-motion: no-preference){
+.timeline-container.timeline-docked-bottom {
+    transition: all, 0.5s ease-in;
+}
+}
+@media (max-width: 790px){
+.timeline-container {
+    padding:10px;
+    box-shadow: 0 2px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+    transition: all 0.3s;
+    width:100%
+}
+}
+/* 私信楼层 */
+.archetype-private_message .topic-body .cooked {
+    border:none;
+    border-radius:0;
+    margin-left:0;
+    padding-left:0.35em;
+}
+
+.archetype-private_message .current-user-post:not(.moderator) .topic-body .cooked {
+    background:none;
+}
+
+
+
+/* 按钮 */
 .btn.btn-default {
     border-radius: 800px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 /*     border: 1px solid rgb(0 0 0/15%) */
     
 }
 
 .btn.btn-primary {
     border-radius: 800px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 /*     border: 1px solid rgb(155 0 0/15%)
      */
+}
+.btn.btn-danger {
+    border-radius: 800px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+/*     border: 1px solid rgb(155 0 0/15%)
+     */
+}
+
+.timeline-container.timeline-fullscreen .topic-timeline .timeline-footer-controls .jump-to-post {
+    padding:6px;
+    margin-right:8px;
+    border-radius: 800px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 }
 
 
@@ -41,6 +233,37 @@
 }
 
 
+
+/* Navigation栏 */
+
+
+
+
+.navigation-container {
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    background-color: var(--card-background-color);
+    margin-top:-2.5em;
+    padding-top:1em;
+    width:auto;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:-10px;
+    margin-right:-10px;
+    margin-bottom:10px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;  
+}
+
+.select-kit.dropdown-select-box.period-chooser {
+/* 时间选择栏 */
+    border-radius: 15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    padding-left:5px;
+}
+
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-collection, .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
     border-radius: 8px;
 }
@@ -48,17 +271,22 @@
 .select-kit .select-kit-row.is-selected {
     border-radius: 8px;
 }
-.select-kit .select-kit-collection:hover .select-kit-row.is-highlighted:hover {
+.select-kit .select-kit-collection .select-kit-row.is-highlighted {
     border-radius: 8px;
+    transition: all 0.15s;
 }
 
 
+.select-kit.combo-box {
+    background-color:transparent;
+}
 
 
 
 /* 回复底下的按钮 */
 nav.post-controls .actions button.d-hover, nav.post-controls .actions button:focus, nav.post-controls .actions button:active {
     border-radius: 800px;
+    
 }
 nav.post-controls .actions button {
     border-radius: 800px;
@@ -89,16 +317,24 @@ nav.post-controls .actions .double-button.widget-button.button-flat{
 
 
 
+/* 顶栏按钮 */
 
 .d-header-icons .icon {
     border-radius: 100px;
     /* nav icon */
 }
 
-.discourse-no-touch .d-header-icons .icon:hover, .discourse-no-touch .d-header-icons .icon:focus {
+.discourse-no-touch .d-header-icons .icon:hover {
     border-radius: 100px; 
     /* nav icon */
 }
+
+.drop-down-mode .d-header-icons .active .icon {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+
 
 div.menu-links-header .menu-links-row button.active {
     border-top-left-radius: 15px;
@@ -108,8 +344,17 @@ div.menu-links-header .menu-links-row .glyphs button {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.menu-panel.drop-down {
+
+.menu-panel {
     border-radius:15px;
+    transition: all 0.15s;
+    opacity:0%;
+}
+
+.menu-panel.drop-down {
+    opacity:100%;
+    border-top-right-radius:10px;
+    transition: all 0.15s;
 }
 
 
@@ -130,12 +375,14 @@ div.menu-links-header .menu-links-row .glyphs button {
     border-top-right-radius:15px;
 }
 
-
+/* 主页上的回复点一下啊 */
 
 #topic-entrance {
     border-radius:15px;
-        
+    transition: all 0.15s;     
 }
+
+
 /* #topic-progress {
     border-radius:15px;
 } */
@@ -197,6 +444,16 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
     padding:10px;
 } */
 
+
+
+/* Share Link */
+
+#share-link {
+    border-radius:15px;
+}
+
+
+/* 滑动条 */
 .hamburger-panel .panel-body::-webkit-scrollbar {
     -webkit-appearance: none;
     width:10px;
@@ -211,4 +468,183 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
     background: transparent;
     border-radius: 0;
 }
+
+code::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width:10px;
+    height:10px;
+}
+code::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    background: var(--header_background);
+}
+code::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0;
+}
+
+
+
+/* 徽章 卡片 */
+.badge-card {
+    border-radius:15px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+}
+
+
+
+/* 主题下的map  */
+.topic-map section{
+    border-radius:15px;
+    border:1px solid var(--primary-low);
+    margin-top:10px;
+    transition: all 0.15s; 
+}
+
+.topic-map {
+    border:none;
+    background: transparent;
+    transition: all 0.15s; 
+    
+}
+.topic-map .avatars, .topic-map .links {
+    box-shadow:none;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+    transition: all 0.15s; 
+}
+.topic-map .avatars {
+    border:none;
+    transition: all 0.15s; 
+}
+    
+.topic-map .buttons .btn:hover {
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.topic-map .buttons .btn {
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+.topic-map .link-summary .btn {
+    border-radius:15px;
+    box-shadow: 0 0 2px var(--normal-box-shadow-color);
+}
+
+
+
+
+/* User-card */
+
+.user-card, .group-card {
+    border-radius:20px;
+}
+
+.user-card .card-content, .group-card .card-content{
+    border-radius:20px;
+}
+
+.user-card .badge-section .user-badge, .user-card .badge-section .more-user-badges a {
+    border-radius:20px;
+}
+
+
+/* 用户页 */
+.user-main .about{
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+}
+.user-main .about.collapsed-info .details{
+    background-color:transparent;
+    padding:10px;
+}
+.user-main .about .details{
+    border-radius: 15px;
+}
+
+.user-content-wrapper .user-content{
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+}
+.user-content{
+    padding:10px;
+}
+
+/* 个人设置页 */
+.user-secondary-navigation .nav-stacked{
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+}
+
+.select-kit.dropdown-select-box.notifications-filter {
+    background-color: transparent;
+    margin-bottom:10px;
+}
+
+.user-secondary-navigation .nav-stacked a.active {
+    background-color: var(--quaternary);
+    opacity: 75%;
+    border-radius: 15px;
+    transition: all 0.15s;
+}
+.user-secondary-navigation .nav-stacked a , .user-secondary-navigation .nav-stacked a:hover {
+    border-radius: 15px;
+    transition: all 0.15s;
+}
+
+.user-preferences .bio-composer{
+    border:none;
+}
+
+.user-preferences .bio-composer .d-editor-preview, .group-form-bio .d-editor-preview, .edit-category-tab-topic-template .d-editor-preview{
+    border-radius: 15px;
+}
+
+
+/* topic顶栏设置 */
+
+#topic-title .container {
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    border:1px solid var(--primary-low);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+}
+
+#topic-title .title-wrapper{
+    margin:20px;
+    margin-left:20px;
+    width:auto;
+    flex-direction: column;
+}
+.topic-category {
+    margin:auto;
+}
+#topic-title h1 {
+    text-align:center;
+}
+
+#topic-title #edit-title, #topic-title .category-chooser, #topic-title .edit-controls {
+    width:100%
+}
+#topic-title .edit-topic-title {
+    max-width:none;
+    text-align:center;
+}
+
+
+
+
+/* 日期选择 */
+.pika-single.is-bound {
+    border-radius: 15px;
+}
+
 }
