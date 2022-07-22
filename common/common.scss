@@ -812,6 +812,11 @@ input[type="text"]:hover, input[type="password"]:hover, input[type="datetime"]:h
     box-shadow: 0 0px 4px var(--normal-box-shadow-color);
 }
 
+#reply-control.draft, #reply-control.saving {
+    border-radius:20px 20px 0 0;
+}
+
+
 
 .composer-popup {
 /*    系统提示  */
