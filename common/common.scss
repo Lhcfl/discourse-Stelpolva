@@ -499,7 +499,13 @@ body {
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 }
 
+.back.btn:hover {
+    background: #00000019;
+}
 
+.forward.btn:hover {
+    background: #00000019;
+}
 
 .timeline-container.timeline-fullscreen .topic-timeline .timeline-footer-controls .jump-to-post {
     padding:6px;
