@@ -1,3 +1,12 @@
+/* 背景 */
+body {
+    background-color:rgba(0, 0, 0, 0.02);
+
+/* 注销下面这行添加背景     */
+/*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc3b022200df811093b0ac70cd6dba5151ee4c28f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661098606&t=3693d73fae9cc9feb44a2065ff2b7f53);
+ */
+}
+
 :root{
     --card-background-color: rgba(var(--secondary-rgb), 0.9);
     --active-card-background-color: rgba(var(--secondary-rgb), 1);
@@ -6,15 +15,6 @@
     --small-radius: 8px;
 /*     --secondary: rgb(0 0 0/4%); */
 }
-
-/* 背景 */
-body {
-    background-color:rgba(0, 0, 0, 0.02);
-/*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc3b022200df811093b0ac70cd6dba5151ee4c28f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661098606&t=3693d73fae9cc9feb44a2065ff2b7f53); */
-
-    
-}
-
 
 
 
@@ -85,15 +85,16 @@ body {
     width: 100%;
 }
 .full-width .contents .topic-list .topic-list-body .topic-list-item {
+    padding:1px;
     width: 100%;
     display: flex;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
     background-color: var(--card-background-color);
-    border: 1px solid rgba(var(--primary-rgb), 0.2);
+    border: 1px solid rgba(var(--primary-rgb), 0.1);
     border-radius: 15px;
     position: relative;
     transition: all 0.15s ease-in-out;
-    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    box-shadow: 0 0px 2px var(--normal-box-shadow-color);
 }
 .full-width .contents .topic-list .topic-list-body .topic-list-item.visited {
     border: 1px solid rgba(var(--primary-rgb), 0.1);
@@ -399,6 +400,7 @@ body {
 }
 .timeline-container:hover {
     box-shadow: 0 2px 8px var(--active-box-shadow-color);
+    background-color: var(--active-card-background-color);
 }
 
 @media screen and (prefers-reduced-motion: no-preference){
@@ -731,7 +733,12 @@ to {opacity:100%;}
     transition: all 0.35s;
 }
 
+.menu-panel .panel-body-bottom {
+    margin-bottom:4px;
+}
+
 .user-menu .quick-access-panel li{
+    margin-bottom:1px;
     border-radius: 15px;
     transition: all 0.15s ease-out;
 }
