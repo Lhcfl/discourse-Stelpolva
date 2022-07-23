@@ -685,6 +685,14 @@ nav.post-controls .actions .double-button.widget-button.button-flat{
 }
  */
 
+/* 使回复底下的按钮达到视觉平衡 */
+nav.post-controls .d-icon-d-unliked {
+    transform:translateY(5%);
+}
+
+nav.post-controls .d-icon-ellipsis-h {
+    transform:translateY(5%);
+}
 
 
 
