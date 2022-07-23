@@ -305,6 +305,10 @@ body {
     margin-bottom: 15px;
 } */
 
+.who-liked, .who-read {
+   width:98.7%
+    
+}
 .post-notice {
     border-radius:15px;
 }
@@ -746,6 +750,8 @@ to {opacity:100%;}
 }
 
 .menu-panel .panel-body-bottom {
+    margin-left: 4px;
+    margin-right: 4px;
     margin-bottom:4px;
 }
 
@@ -1067,13 +1073,9 @@ code::-webkit-scrollbar-track {
     transition: all 0.15s; 
 }
     
-.topic-map .buttons .btn:hover {
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
-}
+
 .topic-map .buttons .btn {
-    border-top-right-radius:15px;
-    border-bottom-right-radius:15px;
+    border-radius:15px;
 }
 
 .topic-map .link-summary .btn {
