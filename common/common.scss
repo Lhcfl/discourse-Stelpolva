@@ -1539,3 +1539,19 @@ div.edit-category .edit-category-title-bar {
     transition: all 0.15s;
 }
 
+.small-action.topic-post-visited {
+    background:transparent;
+    border:none;
+    box-shadow:none;
+}
+.small-action.topic-post-visited .topic-post-visited-line {
+    border:none;
+    margin:15px 0 0 0;
+}
+.small-action.topic-post-visited .topic-post-visited-line .topic-post-visited-message {
+    color: var(--secondary);
+    background-color: var(--danger-medium);
+    border-radius:30px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
