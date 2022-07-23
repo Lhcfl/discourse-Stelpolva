@@ -652,6 +652,9 @@ body {
 
 
 /* 回复底下的按钮 */
+nav.post-controls .actions .double-button button.button-count+.toggle-like {
+    padding-left:10px;
+}
 nav.post-controls .actions button.d-hover, nav.post-controls .actions button:focus, nav.post-controls .actions button:active {
     border-radius: 30px;
     
