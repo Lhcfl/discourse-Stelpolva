@@ -69,7 +69,7 @@ body {
 }
 .full-width .contents .topic-list .topic-list-item-separator .topic-list-data {
     border:none;
-
+    margin-bottom: 5px;
     
 }
 .full-width .contents .topic-list .topic-list-item-separator .topic-list-data span {
@@ -79,16 +79,17 @@ body {
     padding-top:2px;
     padding-bottom:2px;
     box-shadow: 0 1px 5px var(--normal-box-shadow-color);
-    
+
 }
 .full-width .contents .topic-list .topic-list-body .topic-list-item-separator .topic-list-data {
     width: 100%;
 }
 .full-width .contents .topic-list .topic-list-body .topic-list-item {
+    margin-top:-5px;;
     padding:1px;
     width: 100%;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: var(--card-background-color);
     border: 1px solid rgba(var(--primary-rgb), 0.1);
     border-radius: 15px;
@@ -1514,6 +1515,10 @@ div.edit-category .edit-category-title-bar {
 
 .mobile-view .user-stream .item, .user-stream .user-stream-item {
     background-color:transparent;
+}
+
+.mobile-view .full-width .contents .topic-list .topic-list-body .topic-list-item .topic-list-data.posts {
+    width:auto;
 }
 
 .badge-card .favorite-btn {
