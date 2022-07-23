@@ -382,6 +382,9 @@ body {
     background-color:rgba(0, 0, 0, 0.04);
 }
 
+ .embedded-posts.top .row .topic-body {
+    width:calc(100% - 100px);
+}
 
 
 /* footer */
@@ -716,6 +719,11 @@ div.menu-links-header .menu-links-row .glyphs button {
 from {top:0px;opacity:0%;}
 to {opacity:100%;}
 }
+@keyframes panel-getin
+{
+from {opacity:0%;}
+to {opacity:100%;}
+}
 
 .menu-panel {
     border-radius:15px;
@@ -763,9 +771,10 @@ to {opacity:100%;}
 
 /* 主页上的回复点一下啊 */
 
+
 #topic-entrance {
     border-radius:15px;
-    transition: all 0.15s;     
+    animation: panel-getin 0.15s ease-in;     
 }
 
 
