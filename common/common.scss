@@ -5,6 +5,8 @@ body {
 /* 注销下面这行添加背景     */
 /*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc3b022200df811093b0ac70cd6dba5151ee4c28f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661098606&t=3693d73fae9cc9feb44a2065ff2b7f53); */
 /* background-image:url(https://pic.imgdb.cn/item/62dd3915f54cd3f937539048.jpg); */
+    
+    background-position:center;
 
 }
 
@@ -57,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-right-radius:10px;
 }
 .full-width .contents .topic-list .topic-list-body {
     display: contents;
@@ -788,9 +791,10 @@ to {opacity:100%;}
 }
 
 
-.discourse-no-touch .sortable:hover, .discourse-no-touch .sortable:focus {
+.discourse-no-touch .sortable, .discourse-no-touch .sortable:focus {
     border-top-left-radius:15px;
     border-top-right-radius:15px;
+    transition: background 0.15s;
 }
 
 /* 主页上的回复点一下啊 */
@@ -802,10 +806,12 @@ to {opacity:100%;}
 }
 
 
-/* #topic-progress {
-    border-radius:15px;
-} */
-
+#topic-progress {
+    height: 35px;
+}
+#topic-progress .nums {
+    top:8px;
+}
 
 .popup-menu {
     border-radius:15px;
@@ -1454,11 +1460,11 @@ div.edit-category .edit-category-title-bar {
 
 
 /* 关于 */
-.staff.docked.static-faq .container .contents,
-.staff.docked.static-tos .container .contents,
-.staff.docked.static-privacy .container .contents,
+.docked.static-faq .container .contents,
+.docked.static-tos .container .contents,
+.docked.static-privacy .container .contents,
 
-.staff.docked.about-page .container .contents {
+.docked.about-page .container .contents {
     border-radius:15px;
     background-color:var(--card-background-color);
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
@@ -1518,11 +1524,15 @@ div.edit-category .edit-category-title-bar {
 
 
 .mobile-view .topic-body {
-    margin-left:50px;
+    margin-left:0;
+    width: calc(100% - 23px);
 }
-    
+
+
 .mobile-view .topic-body .topic-meta-data {
     margin-top:0;
+    background-color:transparent;
+    border:none;
 }   
 
 .mobile-nav>li>a.expander {
@@ -1563,7 +1573,8 @@ div.edit-category .edit-category-title-bar {
 }
 
 .mobile-view .topic-avatar {
-    margin-top: 15px;
+    margin-top: 22px;
+    margin-left:08px;
 }
 .mobile-view .topic-post article {
     border:none;
@@ -1647,4 +1658,16 @@ div.edit-category .edit-category-title-bar {
 
 .user-info.medium.badge-info {
     margin: 10px;
+}
+
+.container.group .user-content-wrapper {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+    margin-bottom:10px;
+}
+
+.mobile-view .small-action .small-action-desc.timegap {
+    justify-content: center;
 }
