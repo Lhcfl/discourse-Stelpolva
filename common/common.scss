@@ -504,7 +504,13 @@ body {
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 }
 
+.back.btn:hover {
+    background: #00000019;
+}
 
+.forward.btn:hover {
+    background: #00000019;
+}
 
 .timeline-container.timeline-fullscreen .topic-timeline .timeline-footer-controls .jump-to-post {
     padding:6px;
@@ -690,6 +696,14 @@ nav.post-controls .actions .double-button.widget-button.button-flat{
 }
  */
 
+/* 使回复底下的按钮达到视觉平衡 */
+nav.post-controls .d-icon-d-unliked {
+    transform:translateY(5%);
+}
+
+nav.post-controls .d-icon-ellipsis-h {
+    transform:translateY(5%);
+}
 
 
 
@@ -757,7 +771,7 @@ to {opacity:100%;}
 }
 
 .user-menu .quick-access-panel li{
-    margin-bottom:1px;
+    margin: 1px 0 1px 0;
     border-radius: 15px;
     transition: all 0.15s ease-out;
 }
