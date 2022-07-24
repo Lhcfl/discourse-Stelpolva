@@ -3,8 +3,9 @@ body {
     background-color:rgba(0, 0, 0, 0.02);
 
 /* 注销下面这行添加背景     */
-/*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc3b022200df811093b0ac70cd6dba5151ee4c28f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661098606&t=3693d73fae9cc9feb44a2065ff2b7f53);
- */
+/*     background-image:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc3b022200df811093b0ac70cd6dba5151ee4c28f.jpg&refer=http%3A%2F%2Fi0.hdslb.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1661098606&t=3693d73fae9cc9feb44a2065ff2b7f53); */
+/* background-image:url(https://pic.imgdb.cn/item/62dd3915f54cd3f937539048.jpg); */
+
 }
 
 :root{
@@ -1591,4 +1592,16 @@ div.edit-category .edit-category-title-bar {
 }
 .autocomplete ul li a{
     border-radius:8px;
+}
+
+
+.category-boxes .category-box {
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+    padding: 15px;
+    transition: all 0.15s;
+}
+.category-boxes .category-box .category-box-inner {
+    border:none;
 }
