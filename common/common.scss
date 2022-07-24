@@ -505,11 +505,11 @@ body {
 }
 
 .back.btn:hover {
-    background: #00000019;
+    background: var(--primary-low);
 }
 
 .forward.btn:hover {
-    background: #00000019;
+    background: var(--primary-low);
 }
 
 .timeline-container.timeline-fullscreen .topic-timeline .timeline-footer-controls .jump-to-post {
@@ -1618,4 +1618,33 @@ div.edit-category .edit-category-title-bar {
 }
 .category-boxes .category-box .category-box-inner {
     border:none;
+}
+
+
+.docked.static-faq .ember-view .container .contents,
+.docked.static-tos .ember-view .container .contents,
+.docked.static-privacy .ember-view .container .contents,
+
+.docked.about-page .ember-view .container .contents {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+    margin-bottom:10px;
+    padding: 15px;
+}
+
+.quote-button {
+    border-radius:15px;
+    
+}
+
+.mobile-view .user-info.medium.badge-info {
+    max-width: 400px;
+    margin: 10px;
+    width:calc(100%);
+}
+
+.user-info.medium.badge-info {
+    margin: 10px;
 }
