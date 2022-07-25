@@ -1485,10 +1485,6 @@ div.edit-category .edit-category-title-bar {
 
 
 
-
-
-
-
 /* 手机版本 */
 
 .mobile-view #main-outlet {
@@ -1633,20 +1629,6 @@ div.edit-category .edit-category-title-bar {
 }
 .category-boxes .category-box .category-box-inner {
     border:none;
-}
-
-
-.docked.static-faq .ember-view .container .contents,
-.docked.static-tos .ember-view .container .contents,
-.docked.static-privacy .ember-view .container .contents,
-
-.docked.about-page .ember-view .container .contents {
-    border-radius:15px;
-    background-color:var(--card-background-color);
-    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
-    transition:all 0.15s;
-    margin-bottom:10px;
-    padding: 15px;
 }
 
 .quote-button {
