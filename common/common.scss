@@ -1089,6 +1089,10 @@ code::-webkit-scrollbar-track {
     border-top-right-radius:0px;
     transition: all 0.15s; 
 }
+.topic-map .links {
+    border:none;
+    border-top:1px solid var(--primary-low);
+}
 .topic-map .avatars {
     border:none;
     transition: all 0.15s; 
@@ -1670,4 +1674,13 @@ div.edit-category .edit-category-title-bar {
 
 .mobile-view .small-action .small-action-desc.timegap {
     justify-content: center;
+}
+
+.mobile-view .group-details-after-outlet.invite {
+    margin-top:8px;
+}
+
+.hide-preview.btn.no-text {
+    border-radius:80px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 }
