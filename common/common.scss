@@ -1636,11 +1636,11 @@ div.edit-category .edit-category-title-bar {
 }
 
 
-.docked.static-faq .container .contents,
-.docked.static-tos .container .contents,
-.docked.static-privacy .container .contents,
+.docked.static-faq .ember-view .container .contents,
+.docked.static-tos .ember-view .container .contents,
+.docked.static-privacy .ember-view .container .contents,
 
-.docked.about-page .container .contents {
+.docked.about-page .ember-view .container .contents {
     border-radius:15px;
     background-color:var(--card-background-color);
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
