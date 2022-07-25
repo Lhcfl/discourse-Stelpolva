@@ -1,0 +1,10 @@
+background_image:
+  type: string
+  default: default
+  description: Enter image url
+
+tile_background: true
+
+no_background_image:
+  default: true
+  description: Disable the background image and tiling settings above.

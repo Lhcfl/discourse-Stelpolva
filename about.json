@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "default-background": "assets/bkg.jpg"
   },
   "color_schemes": {
   },
