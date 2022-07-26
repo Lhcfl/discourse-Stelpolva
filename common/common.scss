@@ -1666,3 +1666,21 @@ div.edit-category .edit-category-title-bar {
     border-radius:80px;
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
 }
+
+
+
+.show-badge-details .badge-set-title {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+}
+
+.show-badge-details .badge-set-title:hover {
+    background-color:var(--active-card-background-color);
+    box-shadow: 0 2px 4px var(--active-box-shadow-color);
+}
+
+.show-badge-details .badge-set-title .user-content {
+    background-color:transparent;
+}
