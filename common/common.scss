@@ -10,6 +10,8 @@ body {
 
 }
 
+
+
 :root{
     --card-background-color: rgba(var(--secondary-rgb), 0.9);
     --active-card-background-color: rgba(var(--secondary-rgb), 1);
@@ -1696,7 +1698,44 @@ div.edit-category .edit-category-title-bar {
     box-shadow: 0 2px 4px var(--active-box-shadow-color);
 }
 
-
 #reply-control {
     border-radius:10px 10px 0 0;
+}
+
+
+
+/*  8.16更新内容 */
+
+section.tag-info {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+    margin-bottom:10px;
+    padding: 20px;
+    text-align: center;
+}
+section.tag-info .discourse-tag {
+    margin:auto;
+}
+section.tag-info:hover {
+    background-color:var(--active-card-background-color);
+    box-shadow: 0 2px 4px var(--active-box-shadow-color);
+}
+.discourse-tag.bullet::before {
+    border-radius:15px;
+}
+.topic-post.regular {
+    transition: all 0.25s;
+}
+.featured-topic.selected, .topic-post.selected {
+    background: var(--danger-low);
+    border: 1px solid var(--danger);
+    transition: all 0.25s;
+    margin:10px;
+    border-radius:20px;
+    box-shadow: 0px 0px 10px var(--danger);
+}
+.selected-posts {
+    border-radius:15px;
 }
