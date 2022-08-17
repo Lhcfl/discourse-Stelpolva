@@ -1741,29 +1741,41 @@ section.tag-info:hover {
 }
 
 /* 817更新 */
-
-.badge-wrapper.bar .badge-category-bg {
-    border-radius:15px;
-    width: 8px;
-    height:10px;
+.category-name {
     display:flex;
     align-items: center;
+}
+.badge-wrapper.bar .badge-category-bg {
+    border-radius:15px;
+    width: 10px;
+    height:12px;
+    display:flex;
+    align-items: center;
+    margin-top: 0;
     margin-left:2px
 }
 
 .badge-wrapper.bar .badge-category-bg:nth-child(2) {
     border-radius:0 15px 15px 0;
-    width: 3.4px;
-    height:10px;
+    width: 4px;
+    height:12px;
     display:flex;
     align-items: center;
     margin-left:0;
 }
 .badge-wrapper.bar .badge-category-parent-bg {
     border-radius:15px 0 0 15px;
-    width: 3.4px;
-    height:10px;
+    width: 4px;
+    height:12px;
     display:flex;
     align-items: center;
     margin-left:2px
+}
+
+.topic-post article.boxed .select-posts button {
+     border-radius:15px;
+}
+
+.suggested-topics h3 .badge-wrapper.bullet span.badge-category, .suggested-topics h3 .badge-wrapper.box span, .suggested-topics h3 .badge-wrapper.bar span {
+    display:flex;
 }
