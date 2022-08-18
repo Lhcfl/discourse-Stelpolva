@@ -1779,3 +1779,13 @@ section.tag-info:hover {
 .suggested-topics h3 .badge-wrapper.bullet span.badge-category, .suggested-topics h3 .badge-wrapper.box span, .suggested-topics h3 .badge-wrapper.bar span {
     display:flex;
 }
+
+/* 818 */
+.groups-form.form-vertical {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+    margin-bottom:10px;
+    padding: 20px;
+}
