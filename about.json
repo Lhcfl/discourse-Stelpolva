@@ -1,6 +1,6 @@
 {
   "name": "Stelpolva",
-  "component": true,
+  "component": false,
   "license_url": "https://github.com/Lhcfl/discourse-Stelpolva",
   "about_url": "https://github.com/Lhcfl/discourse-Stelpolva",
   "authors": "Lhcfl",
