@@ -1789,3 +1789,24 @@ section.tag-info:hover {
     margin-bottom:10px;
     padding: 20px;
 }
+
+/* Kanban Board*/
+
+.discourse-kanban-container .discourse-kanban-list {
+    background: var(--primary-very-low);
+    border-radius:15px;
+    box-shadow: 0px 2px 5px var(--primary-low-mid);
+}
+.discourse-kanban-container .discourse-kanban-list .topic-card {
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px var(--primary-low-mid);
+    margin: 0px -3px 10px 1px;
+    color: var(--primary-high)
+}
+.discourse-kanban-container .discourse-kanban-list .topic-card .tags {
+    font-size: 50%;
+}
+
+.discourse-kanban-container .discourse-kanban-list .list-title {
+    margin-bottom: 8px;
+}
