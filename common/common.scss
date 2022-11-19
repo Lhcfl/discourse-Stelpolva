@@ -1810,3 +1810,32 @@ section.tag-info:hover {
 .discourse-kanban-container .discourse-kanban-list .list-title {
     margin-bottom: 8px;
 }
+
+.d-toc-main {
+    background: var(--secondary);
+    border: 1px solid var(--primary-low);
+    border-radius: 15px;
+    box-shadow: 0 1px 4px var(--primary-low-mid);
+    transition: all 0.3s;
+}
+.d-toc-main:hover {
+    box-shadow: 0 1px 8px var(--primary-low-mid);
+}
+#d-toc::-webkit-scrollbar {
+    background: transparent;
+    width: 5px
+}
+#d-toc::-webkit-scrollbar-thumb {
+    background: var(--primary-low-mid);
+    border-radius: 5px;
+
+}
+.d-toc-icons {
+    margin: 5px 0px 0px 0px;
+}
+.d-toc-icons :before {
+    content: "目录 "
+}
+.d-toc-main #d-toc li.d-toc-item.direct-active>a:before {
+    min-width: 3px;
+}
