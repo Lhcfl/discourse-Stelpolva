@@ -317,6 +317,8 @@ body {
 }
 .post-notice {
     border-radius:15px;
+    max-width: 100%;
+    width: calc(740px + (11px * 2));
 }
 
 .small-action {
@@ -327,7 +329,7 @@ body {
     margin-bottom: 15px;
     margin-left:50px;
     transition: all 0.15s;
-    width:85%;
+    width: calc(713px + (11px * 2));
 }
 
 .small-action:hover {
@@ -353,11 +355,21 @@ body {
     .topic-body {
         width:calc(100%-300px);
     }
+    .small-action {
+        width:calc(100%-300px);
+    }
 
 }
 @media (max-width: 1010px){
 .topic-body {
     width: calc(100% - 100px);
+}
+.post-notice {
+    width: calc(100% - 50px);
+}
+.small-action {
+    width: calc(100% - 80px);
+    max-width: 100%;
 }
 }
 
@@ -691,7 +703,6 @@ nav.post-controls .actions .double-button button.button-count {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-
 nav.post-controls .actions .double-button button.button-count+.toggle-like{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1144,7 +1155,6 @@ code::-webkit-scrollbar-track {
     border-radius: 15px;
     background-color: var(--card-background-color);
 }
-
 .user-main .about.collapsed-info .details{
     background-color:transparent;
     padding:10px;
@@ -1789,6 +1799,14 @@ section.tag-info:hover {
     margin-bottom:10px;
     padding: 20px;
 }
+    
+/*   1123   */
+#topic-timer-modal .alert.alert-info{
+    margin: 0;
+}
+.control-unit .alert.alert-info{
+    margin: 10px 0;
+}
 
 /* Kanban Board*/
 
@@ -1834,7 +1852,7 @@ section.tag-info:hover {
 .d-toc-icons {
     margin: 5px 0px 0px 0px;
 }
-.d-toc-icons :before {
+.scroll-to-bottom:before {
     content: "目录 "
 }
 .d-toc-main #d-toc li.d-toc-item.direct-active>a:before {
