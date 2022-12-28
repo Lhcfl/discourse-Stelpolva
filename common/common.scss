@@ -152,7 +152,12 @@ body {
                     width: 60%;
                     order: 2;
                     min-height: 100%;
-
+                    transition: all 0.3s;
+                    &.focused {
+                        border-radius: 15px;
+                        margin-left: -5px;
+                        padding-left: 15px;
+                    }
                     .title {
                         font-weight: bold;
                     }
@@ -1991,4 +1996,3 @@ section.tag-info:hover {
 .user-menu .menu-tabs-container .btn {
     border-radius: 0 800px 800px 0;
 }
-
