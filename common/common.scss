@@ -338,16 +338,16 @@ body {
     }
 }
 
-@media (min-width: 1010px) {
-    .topic-body {
-        width: calc(100% - 90px);
-    }
+// @media (min-width: 1010px) {
+//     .topic-body {
+//         width: calc(100% - 90px);
+//     }
 
-    .small-action {
-        width: calc(100% - 90px);
-    }
+//     .small-action {
+//         width: calc(100% - 90px);
+//     }
 
-}
+// }
 
 @media (max-width: 1010px) {
     .topic-body {
