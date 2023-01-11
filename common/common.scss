@@ -340,11 +340,11 @@ body {
 
 // @media (min-width: 1010px) {
 //     .topic-body {
-//         width: calc(100% - 90px);
+//         width: calc(var(--topic-body-width) + (var(--topic-body-width-padding) * 2));
 //     }
 
 //     .small-action {
-//         width: calc(100% - 90px);
+//         width: calc(var(--topic-body-width) + (var(--topic-body-width-padding) * 2));
 //     }
 
 // }
@@ -612,23 +612,47 @@ body {
 
 /* Navigation栏 */
 
-
-
+#main-container {
+    padding: 0;
+    margin-top: -10px;
+    .alert {
+        margin: 10px 0;
+    }
+}
 
 .navigation-container {
     box-shadow: 0 1px 5px var(--normal-box-shadow-color);
     border: 1px solid var(--primary-low);
     background-color: var(--active-card-background-color);
-    margin-top: -2.5em;
-    padding-top: 1em;
+    padding: 10px 10px 0 10px;
     width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
     margin-bottom: 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
+}
+
+.navigation-topics .navigation-container {
+    margin: 0 -0px 0 0px;
+}
+
+.category-header .list-controls > .container {
+    box-shadow: 0 1px 5px var(--normal-box-shadow-color);
+    border: 1px solid var(--primary-low);
+    background-color: var(--card-background-color);
+    border-radius: 15px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+    .category-logo {
+        margin: 0 10px 10px 10px;
+    }
+    .navigation-container {
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 .select-kit.dropdown-select-box.period-chooser {
@@ -1599,13 +1623,24 @@ div.edit-category .edit-category-title-bar {
     border-radius: 15px;
 }
 
-.mobile-view #main-container.container {
-    /*     display:none; */
-    position: fixed;
-    z-index: 3;
-    bottom: 0px;
-    padding: 0;
+.mobile-view #main-container {
+    .alert {
+        margin: 10px 0;
+    }
 }
+.mobile-view .navigation-controls .bulk-select {
+    border-radius: 800px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+}
+
+.mobile-view .bulk-select-actions {
+    border-radius: 800px;
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+}
+.mobile-view .bulk-select[type="checkbox"] {
+    scale: 160%;
+}
+
 
 .mobile-view .full-width {
     margin-top: 10px;
@@ -1619,8 +1654,10 @@ div.edit-category .edit-category-title-bar {
     max-width: 100%;
 }
 
-.mobile-view .topic-list .num {
+.mobile-view .full-width .contents .topic-list .num {
     margin: 0;
+    width: 100%;
+    text-align: right;
 }
 
 
@@ -1985,8 +2022,13 @@ section.tag-info:hover {
 }
 
 .sidebar-wrapper {
-    background: var(--secondary);
-    box-shadow: 0 0 6px var(--primary-low-mid);
+    box-shadow: 0 0 4px var(--normal-box-shadow-color);
+    background-color: var(--card-background-color);
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0 0 6px var(--active-box-shadow-color);
+        background-color: var(--active-card-background-color);
+    }
 }
 
 .user-menu.drop-down.menu-panel {
@@ -1995,4 +2037,45 @@ section.tag-info:hover {
 
 .user-menu .menu-tabs-container .btn {
     border-radius: 0 800px 800px 0;
+}
+
+#banner {
+    border-radius: 15px;    z-index: 1;
+    position: sticky;
+}
+
+.admin-detail {
+    background: transparent;
+}
+.mobile-view .admin-detail {
+    background: var(--secondary);
+}
+
+#main-chat-outlet {
+    background: var(--card-background-color);
+}
+
+.chat-composer {
+    border-radius: 15px;
+}
+
+.chat-browse-view__actions .filter-input {
+    border: none;
+}
+
+.chat-message-actions {
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 4px var(--normal-box-shadow-color);
+    button, .more-buttons summary{
+        border-radius: 800px !important;
+        box-shadow: none;
+    }
+    &:hover {
+        box-shadow: 0 0 6px var(--active-box-shadow-color);
+    }
+}
+
+.mobile-view .topic-list-header .topic-list-data:not(.default) {
+    display: none !important;
 }
