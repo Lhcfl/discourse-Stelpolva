@@ -1661,6 +1661,10 @@ div.edit-category .edit-category-title-bar {
 .mobile-view .small-action {
     margin-left: 0;
     width: calc(100%);
+    .topic-avatar {
+        margin-top: 17px;
+        padding-top: 0;
+    }
 }
 
 .mobile-view .topic-body {
@@ -1714,7 +1718,7 @@ div.edit-category .edit-category-title-bar {
 }
 
 .mobile-view .topic-avatar {
-    margin-top: 22px;
+    margin-top: 17px;
     margin-left: 08px;
 }
 
