@@ -1653,9 +1653,8 @@ div.edit-category .edit-category-title-bar {
 }
 
 .mobile-view .full-width .contents .topic-list .num {
-    margin: 0;
-    width: 100%;
-    text-align: right;
+    right: 0;
+    position: absolute;
 }
 
 
