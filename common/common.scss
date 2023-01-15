@@ -2077,3 +2077,7 @@ section.tag-info:hover {
 .mobile-view .topic-list-header .topic-list-data:not(.default) {
     display: none !important;
 }
+
+.tag-title-header {
+    background: var(--primary-low);
+}
