@@ -1718,7 +1718,7 @@ div.edit-category .edit-category-title-bar {
 }
 
 .mobile-view .topic-avatar {
-    margin-top: 17px;
+    margin-top: 11px;
     margin-left: 08px;
 }
 
@@ -2083,4 +2083,8 @@ section.tag-info:hover {
 
 .tag-title-header {
     background: var(--primary-low);
+}
+
+.small-action .topic-avatar, .small-action .small-action-desc {
+    border: none;
 }
