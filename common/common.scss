@@ -2,9 +2,17 @@
 body {
     background-color: rgba(0, 0, 0, 0.02);
     background-position: center;
+    @if $no-background-image == "false" {
+        @if $background-image != "default" {
+            // Thanks @tmoko!
+            background-image: url($background-image);
+        } @else {
+        // Default background pattern from Toptal Subtle Patterns
+        // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
+            background-image: url($default-background);
+        }
+    }
 }
-
-
 
 :root {
     --card-background-color: rgba(var(--secondary-rgb), 0.9);
@@ -351,7 +359,7 @@ body {
 
 @media (max-width: 1010px) {
     .topic-body {
-        width: calc(100% - 100px);
+        width: calc(100%-300px);
     }
 
     .post-notice {
@@ -1658,12 +1666,8 @@ div.edit-category .edit-category-title-bar {
 
 
 .mobile-view .small-action {
-    margin-left: 0;
+    margin-left:0;
     width: calc(100%);
-    .topic-avatar {
-        margin-top: 17px;
-        padding-top: 0;
-    }
 }
 
 .mobile-view .topic-body {
@@ -1823,6 +1827,22 @@ div.edit-category .edit-category-title-bar {
     background-color: var(--card-background-color);
     box-shadow: 0 2px 4px var(--normal-box-shadow-color);
     transition: all 0.15s;
+}
+
+.show-badge-details .badge-set-title {
+    border-radius:15px;
+    background-color:var(--card-background-color);
+    box-shadow: 0 2px 4px var(--normal-box-shadow-color);
+    transition:all 0.15s;
+}
+
+.show-badge-details .badge-set-title:hover {
+    background-color:var(--active-card-background-color);
+    box-shadow: 0 2px 4px var(--active-box-shadow-color);
+}
+
+.show-badge-details .badge-set-title .user-content {
+    background-color:transparent;
 }
 
 .show-badge-details .badge-set-title:hover {
